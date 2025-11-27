@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Salud - ACTIVATE</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .guide-header {
+            background: linear-gradient(135deg, var(--pale-green) 0%, var(--bg-white) 100%);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .guide-header h1 {
+            color: var(--primary-green);
+            margin-bottom: 1rem;
+        }
+        
+        .treatment-section {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .treatment-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 20px var(--shadow);
+            border-left: 5px solid var(--accent-green);
+        }
+        
+        .treatment-card h2 {
+            color: var(--primary-green);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--pale-green);
+        }
+        
+        .dosage-table {
+            width: 100%;
+            margin-top: 1rem;
+        }
+        
+        .dosage-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1rem;
+            padding: 0.8rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .dosage-row:last-child {
+            border-bottom: none;
+        }
+        
+        .dosage-product {
+            font-weight: 600;
+            color: var(--primary-green);
+        }
+        
+        .dosage-amount {
+            color: var(--text-gray);
+        }
+        
+        .consultation-note {
+            background-color: var(--pale-green);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            font-style: italic;
+            color: var(--primary-green);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/Activate_sin_fondo.png" alt="ACTIVATE Logo">
+                </a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html"><span data-i18n="nav_inicio">Inicio</span></a></li>
+                <li><a href="../index.html#categorias"><span data-i18n="nav_categorias">Categorías</span></a></li>
+                <li><a href="business-opportunity.html"><span data-i18n="nav_oportunidad">Oportunidad de Negocio</span></a></li>
+                <li><a href="../index.html#contacto"><span data-i18n="nav_contacto">Contacto</span></a></li>
+            </ul>
+            
+            <div class="nav-right">
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="es" onclick="setLanguage('es')">ES</button>
+                    <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+                </div>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    ☰
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="guide-header">
+        <h1 data-i18n="health_guide_title">Guía de Tratamientos VitalHealth</h1>
+        <p style="text-align: center;"><p style="text-align: center;" data-i18n="health_guide_subtitle">Manual de apoyo para diferentes condiciones de salud</p>
+        <p style="color: #e74c3c; font-weight: 600; margin-top: 1rem; text-align: center;">
+            <p style="color: #e74c3c; font-weight: 600; margin-top: 1rem; text-align: center;" data-i18n="health_guide_important">IMPORTANTE: Consulta con un profesional de la salud antes de comenzar cualquier tratamiento. 
+            Estos productos no sustituyen el tratamiento médico.
+        </p>
+    </div>
+
+    <div class="treatment-section">
+        <div style="max-width: 900px; margin: 0 auto; padding: 3rem 2rem;">
+            
+            <!-- Introducción -->
+            <div style="background: linear-gradient(135deg, var(--pale-green) 0%, white 100%); padding: 3rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 3rem;">
+                <h2 style="color: var(--primary-green); font-size: 2rem; margin-bottom: 1.5rem; text-align: center;" data-i18n="health_guide_section_title">🌿 Tu Guía de Bienestar VitalHealth
+                </h2>
+                <p style="font-size: 1.2rem; line-height: 1.8; color: var(--text-gray); margin-bottom: 1.5rem; text-align: justify;" data-i18n-html="health_guide_intro_p1">
+                    En <strong style="color: var(--primary-green);">ACTIVATE</strong>, respaldados por 
+                    <strong style="color: var(--primary-green);">VITALHEALTH</strong>, nos comprometemos con tu bienestar integral. 
+                    Entendemos que cada persona tiene necesidades únicas de salud, y es por eso que hemos desarrollado una 
+                    <strong>guía completa y detallada</strong> para orientarte en el uso adecuado de nuestros productos naturales.
+                </p>
+                <p style="font-size: 1.2rem; line-height: 1.8; color: var(--text-gray); text-align: justify;" data-i18n-html="health_guide_intro_p2">
+                    Nuestro <strong style="color: var(--accent-green);">MANUAL DE USO PARA APOYO EN PATOLOGÍAS</strong> ha sido 
+                    cuidadosamente elaborado por expertos en salud y nutrición para proporcionarte información valiosa sobre 
+                    cómo nuestros suplementos pueden <strong>complementar y apoyar</strong> diversos tratamientos médicos para 
+                    condiciones específicas.
+                </p>
+            </div>
+
+            <!-- Contenido del Manual -->
+            <div style="background: white; padding: 3rem; border-radius: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); margin-bottom: 3rem; border-left: 6px solid var(--accent-green);">
+                <h3 style="color: var(--primary-green); font-size: 1.8rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 1rem;">
+                    <h3 style="color: var(--primary-green); font-size: 1.8rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 1rem;" data-i18n="health_guide_what_includes">📋 ¿Qué incluye este manual?
+                </h3>
+                
+                <div style="display: grid; gap: 1.5rem;">
+                    <div style="display: flex; gap: 1rem; align-items: start;">
+                        <span style="color: var(--accent-green); font-size: 1.5rem; flex-shrink: 0;">✓</span>
+                        <p style="margin: 0; line-height: 1.7; color: var(--text-gray);" data-i18n-html="health_guide_includes_1">
+                            <strong>Recomendaciones de uso específicas</strong> para más de 20 condiciones de salud diferentes
+                        </p>
+                    </div>
+                    
+                    <div style="display: flex; gap: 1rem; align-items: start;">
+                        <span style="color: var(--accent-green); font-size: 1.5rem; flex-shrink: 0;">✓</span>
+                        <p style="margin: 0; line-height: 1.7; color: var(--text-gray);" data-i18n-html="health_guide_includes_2">
+                            <strong>Dosis sugeridas</strong> y frecuencias de consumo para cada producto
+                        </p>
+                    </div>
+                    
+                    <div style="display: flex; gap: 1rem; align-items: start;">
+                        <span style="color: var(--accent-green); font-size: 1.5rem; flex-shrink: 0;">✓</span>
+                        <p style="margin: 0; line-height: 1.7; color: var(--text-gray);" data-i18n-html="health_guide_includes_3">
+                            <strong>Combinaciones de productos</strong> optimizadas para diferentes necesidades de salud
+                        </p>
+                    </div>
+                    
+                    <div style="display: flex; gap: 1rem; align-items: start;">
+                        <span style="color: var(--accent-green); font-size: 1.5rem; flex-shrink: 0;">✓</span>
+                        <p style="margin: 0; line-height: 1.7; color: var(--text-gray);" data-i18n-html="health_guide_includes_4">
+                            <strong>Guías de apoyo</strong> para padecimientos como diabetes, hipertensión, colesterol alto, 
+                            sobrepeso, problemas digestivos, artritis, y muchos más
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advertencia Importante -->
+            <div style="background: linear-gradient(135deg, #fff3cd 0%, #fffaeb 100%); padding: 2.5rem; border-radius: 15px; margin-bottom: 3rem; border: 2px solid #ffc107;">
+                <h3 style="color: #856404; font-size: 1.6rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                    <h3 style="color: #856404; font-size: 1.6rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;" data-i18n="health_guide_warning_title">⚠️ Importante: Uso Responsable
+                </h3>
+                <div style="background: white; padding: 2rem; border-radius: 10px; margin-bottom: 1.5rem;">
+                    <p style="color: #856404; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem; font-weight: 600;" data-i18n-html="health_guide_warning_p1">
+                        Los productos VitalHealth son <strong>suplementos nutricionales de apoyo</strong> que complementan 
+                        el tratamiento médico profesional.
+                    </p>
+                    <p style="color: #856404; font-size: 1.1rem; line-height: 1.8; margin: 0;" data-i18n-html="health_guide_warning_p2">
+                        <strong style="color: #d32f2f;">NO SUSTITUYEN</strong> el diagnóstico, tratamiento o consejo de 
+                        un profesional de la salud. Son una <strong>herramienta complementaria</strong> diseñada para 
+                        apoyar tu bienestar en conjunto con la supervisión médica adecuada.
+                    </p>
+                </div>
+                <p style="color: #856404; font-size: 1rem; line-height: 1.7; margin: 0; font-style: italic;" data-i18n="health_guide_warning_p3">
+                    Siempre consulta con tu médico o especialista antes de iniciar cualquier régimen de suplementación, 
+                    especialmente si tienes condiciones médicas preexistentes, estás embarazada, lactando, o tomando 
+                    medicamentos recetados.
+                </p>
+            </div>
+
+            <!-- Botón de Descarga -->
+            <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, var(--primary-green) 0%, var(--accent-green) 100%); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                <h3 style="color: white; font-size: 1.8rem; margin-bottom: 1rem;">
+                    <h3 style="color: white; font-size: 1.8rem; margin-bottom: 1rem;" data-i18n="health_guide_download_title">📥 Descarga tu Manual de Apoyo
+                </h3>
+                <p style="color: white; font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
+                    <p style="color: white; font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;" data-i18n="health_guide_download_subtitle">Obtén acceso completo a todas las recomendaciones y guías de uso
+                </p>
+                <a href="../Manual_de_apoyo.pdf" download="Manual_de_Apoyo_VitalHealth_ACTIVATE.pdf" 
+                   style="display: inline-block; background: white; color: var(--primary-green); padding: 1.2rem 3rem; 
+                          border-radius: 50px; font-size: 1.2rem; font-weight: 700; text-decoration: none; 
+                          box-shadow: 0 5px 20px rgba(0,0,0,0.2); transition: all 0.3s ease;
+                          border: 3px solid white;">
+                    <span data-i18n="health_guide_download_button">📄 Descargar Manual PDF</span>
+                </a>
+                <p style="color: white; font-size: 0.9rem; margin-top: 1.5rem; opacity: 0.9;">
+                    <p style="color: white; font-size: 0.9rem; margin-top: 1.5rem; opacity: 0.9;" data-i18n="health_guide_download_note">Formato PDF • Fácil de consultar • Siempre disponible
+                </p>
+            </div>
+
+            <!-- Contacto con Expertos -->
+            <div style="background: white; padding: 2.5rem; border-radius: 15px; margin-top: 3rem; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+                <h3 style="color: var(--primary-green); font-size: 1.6rem; margin-bottom: 1rem;">
+                    <h3 style="color: var(--primary-green); font-size: 1.6rem; margin-bottom: 1rem;" data-i18n="health_guide_contact_title">💚 ¿Necesitas Asesoría Personalizada??
+                </h3>
+                <p style="color: var(--text-gray); font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;" data-i18n="health_guide_contact_text">
+                    Nuestro equipo de expertos en salud de ACTIVATE está disponible para ayudarte a elegir 
+                    los productos más adecuados para tus necesidades específicas y responder todas tus preguntas.
+                </p>
+                <a href="../index.html#contacto" 
+                   style="display: inline-block; background: var(--accent-green); color: white; padding: 1rem 2.5rem; 
+                          border-radius: 50px; font-size: 1.1rem; font-weight: 600; text-decoration: none; 
+                          transition: all 0.3s ease;">
+                    Contáctanos
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="../images/Activate_sin_fondo.png" alt="ACTIVATE Logo">
+                </div>
+                <h3 data-i18n="footer_about_title">Acerca de ACTIVATE</h3>
+                <p><p data-i18n="footer_about_text">ACTIVATE es tu marca de confianza para productos de salud y bienestar de VitalHealth.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3 data-i18n="footer_quick_links">Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="../index.html"><span data-i18n="nav_inicio">Inicio</span></a></li>
+                    <li><a href="../index.html#categorias"><span data-i18n="nav_categorias">Categorías</span></a></li>
+                    <li><a href="business-opportunity.html"><span data-i18n="nav_oportunidad">Oportunidad de Negocio</span></a></li>
+                    <li><a href="terms.html"><span data-i18n="nav_terminos">Términos y Condiciones</span></a></li>
+                    <li><a href="privacy.html"><span data-i18n="nav_privacidad">Política de Privacidad</span></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p style="text-align: center;"><p style="text-align: center;" data-i18n="footer_copyright">© 2025 ACTIVATE. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a id="whatsapp-btn" href="#" target="_blank" class="whatsapp-button" aria-label="Contact us on WhatsApp">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-4.713 1.262 1.262-4.669-0.292-0.508c-1.207-2.100-1.847-4.507-1.847-6.983 0-7.51 6.11-13.62 13.62-13.62s13.62 6.11 13.62 13.62-6.11 13.62-13.62 13.62zM21.305 19.26c-0.346-0.174-2.049-1.007-2.366-1.123-0.316-0.117-0.547-0.174-0.776 0.174s-0.892 1.123-1.094 1.347c-0.201 0.227-0.401 0.254-0.747 0.080s-1.456-0.537-2.774-1.711c-1.026-0.913-1.719-2.038-1.921-2.384s-0.022-0.535 0.152-0.707c0.156-0.156 0.346-0.401 0.518-0.603s0.231-0.346 0.346-0.574c0.116-0.231 0.058-0.432-0.028-0.603s-0.776-1.87-1.063-2.565c-0.28-0.672-0.56-0.58-0.776-0.591-0.2-0.008-0.432-0.010-0.662-0.010s-0.603 0.086-0.92 0.432c-0.316 0.346-1.206 1.179-1.206 2.873s1.235 3.333 1.406 3.561c0.174 0.231 2.375 3.634 5.76 5.099 0.805 0.351 1.433 0.559 1.923 0.718 0.809 0.257 1.544 0.221 2.125 0.134 0.648-0.096 2.049-0.835 2.335-1.642 0.288-0.808 0.288-1.501 0.201-1.642-0.086-0.145-0.316-0.231-0.662-0.405z"/>
+            </svg>
+        </a>
+    </div>
+
+    <script src="../js/language.js"></script>
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+        
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                const navLinks = document.getElementById('navLinks');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

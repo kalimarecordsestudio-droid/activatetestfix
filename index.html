@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ACTIVATE - Productos de salud y bienestar VitalHealth. Transforma tu vida con suplementos naturales de calidad premium.">
+    <meta name="keywords" content="VitalHealth, ACTIVATE, suplementos naturales, salud, bienestar, nanotecnología">
+    <title>ACTIVATE - Productos de Salud y Bienestar VitalHealth</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/Activate_sin_fondo.png" alt="ACTIVATE Logo">
+            </div>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="#categorias" data-i18n="nav_categories">Categorías</a></li>
+                <li><a href="pages/health-guide.html" data-i18n="nav_health_guide">Guía de Salud</a></li>
+                <li><a href="pages/business-opportunity.html" data-i18n="nav_business">Oportunidad de Negocio</a></li>
+                <li><a href="#contacto" data-i18n="nav_contact">Contacto</a></li>
+            </ul>
+            
+            <div class="nav-right">
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="es" onclick="setLanguage('es')">ES</button>
+                    <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+                </div>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    ☰
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1 class="hero-main-title" data-i18n="hero_title">PRODUCTOS CONFIABLES Y FUNCIONALES</h1>
+            
+            <img src="images/Imagen presentacion_1761344064965.jpg" alt="Productos VitalHealth" class="hero-image">
+            
+            <div class="hero-text">
+                <p data-i18n="hero_subtitle">
+                    Tenemos los mejores suplementos con extractos naturales, vitaminas y minerales, 
+                    supervisados por nuestro consejo de más de 300 médicos especialistas. Contamos con 
+                    más de 70,000 historias de éxito y testimonios que demuestran que nuestros productos 
+                    tienen notables resultados en su bienestar general.
+                </p>
+                
+                <div class="wellness-goals">
+                    <h2 data-i18n="hero_wellness_title">Nos preocupamos por apoyar los diferentes objetivos de bienestar</h2>
+                    <ul class="wellness-list">
+                        <li data-i18n="hero_wellness_1">Desintoxicar - Tu cuerpo</li>
+                        <li data-i18n="hero_wellness_2">Restaurar - Tu vitalidad</li>
+                        <li data-i18n="hero_wellness_3">Nutrir - A ti y a tu familia</li>
+                        <li data-i18n="hero_wellness_4">Despertar - Tu energía</li>
+                        <li data-i18n="hero_wellness_5">Desarrollar - Integral y físicamente a los niños</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- International Shipping Section -->
+    <section class="shipping">
+        <div class="container">
+            <h3 class="shipping-title">
+                <span data-i18n="shipping_title">Envíos Internacionales desde:</span> 
+                <span class="flag-circle"><img src="https://flagcdn.com/w40/mx.png" alt="México"></span> 
+                <span data-i18n="shipping_to">a:</span>
+            </h3>
+            <div class="shipping-flags">
+                <span class="flag-circle" title="Estados Unidos"><img src="https://flagcdn.com/w40/us.png" alt="USA"></span>
+                <span class="flag-circle" title="Canadá"><img src="https://flagcdn.com/w40/ca.png" alt="Canadá"></span>
+                <span class="flag-circle" title="España"><img src="https://flagcdn.com/w40/es.png" alt="España"></span>
+                <span class="flag-circle" title="Colombia"><img src="https://flagcdn.com/w40/co.png" alt="Colombia"></span>
+                <span class="flag-circle" title="República Dominicana"><img src="https://flagcdn.com/w40/do.png" alt="Rep. Dominicana"></span>
+                <span class="flag-circle" title="Ecuador"><img src="https://flagcdn.com/w40/ec.png" alt="Ecuador"></span>
+                <span class="flag-circle" title="Guatemala"><img src="https://flagcdn.com/w40/gt.png" alt="Guatemala"></span>
+                <span class="flag-circle" title="Argentina"><img src="https://flagcdn.com/w40/ar.png" alt="Argentina"></span>
+                <span class="flag-circle" title="Barbados"><img src="https://flagcdn.com/w40/bb.png" alt="Barbados"></span>
+                <span class="flag-circle" title="Bolivia"><img src="https://flagcdn.com/w40/bo.png" alt="Bolivia"></span>
+                <span class="flag-circle" title="Chile"><img src="https://flagcdn.com/w40/cl.png" alt="Chile"></span>
+                <span class="flag-circle" title="Costa Rica"><img src="https://flagcdn.com/w40/cr.png" alt="Costa Rica"></span>
+                <span class="flag-circle" title="Cuba"><img src="https://flagcdn.com/w40/cu.png" alt="Cuba"></span>
+                <span class="flag-circle" title="Honduras"><img src="https://flagcdn.com/w40/hn.png" alt="Honduras"></span>
+                <span class="flag-circle" title="Nicaragua"><img src="https://flagcdn.com/w40/ni.png" alt="Nicaragua"></span>
+                <span class="flag-circle" title="Panamá"><img src="https://flagcdn.com/w40/pa.png" alt="Panamá"></span>
+                <span class="flag-circle" title="Paraguay"><img src="https://flagcdn.com/w40/py.png" alt="Paraguay"></span>
+                <span class="flag-circle" title="Perú"><img src="https://flagcdn.com/w40/pe.png" alt="Perú"></span>
+                <span class="flag-circle" title="El Salvador"><img src="https://flagcdn.com/w40/sv.png" alt="El Salvador"></span>
+                <span class="flag-circle" title="Trinidad y Tobago"><img src="https://flagcdn.com/w40/tt.png" alt="Trinidad y Tobago"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categorias">
+        <h2 class="section-title" data-i18n="categories_title">Categorías de Productos</h2>
+        
+        <div class="categories-vertical">
+            <!-- Category 1: Desintoxica -->
+            <div class="category-row">
+                <div class="category-image-container">
+                    <img src="images/Categoria Desentoxica_1761365344845.jpg" alt="Desintoxica - Productos">
+                </div>
+                <div class="category-info">
+                    <h3 data-i18n="category_detox">DESINTOXICA</h3>
+                    <p class="category-description" data-i18n="category_detox_desc">Elimina toxinas y purifica tu organismo</p>
+                    <ul class="product-list">
+                        <li><strong>V-ORGANEX</strong> <span data-i18n="detox_prod1">- Limpieza profunda de órganos vitales</span></li>
+                        <li><strong>TE DETOX</strong> <span data-i18n="detox_prod2">- Infusión natural para eliminar toxinas</span></li>
+                        <li><strong>V-GLUCALOSE</strong> <span data-i18n="detox_prod3">- Apoya el equilibrio de glucosa en sangre</span></li>
+                        <li><strong>S-BALANCE</strong> <span data-i18n="detox_prod4">- Regula el sistema digestivo y metabólico</span></li>
+                        <li><strong>V-ITAREM</strong> <span data-i18n="detox_prod5">- Detox celular con efecto revitalizante</span></li>
+                    </ul>
+                    <a href="https://vitalhealthglobal.com/collections/all?refID=111834" class="category-btn" data-i18n="view_products">Ver Productos en la Tienda</a>
+                </div>
+            </div>
+            
+            <!-- Category 2: Restaura -->
+            <div class="category-row">
+                <div class="category-image-container">
+                    <img src="images/Categoria Restaura_1761365344845.jpg" alt="Restaura - Productos">
+                </div>
+                <div class="category-info">
+                    <h3 data-i18n="category_restore">RESTAURA</h3>
+                    <p class="category-description" data-i18n="category_restore_desc">Recupera tu vitalidad y fortalece tu salud</p>
+                    <ul class="product-list">
+                        <li><strong>VITARLY-L</strong> <span data-i18n="restore_prod1">- Regeneración hepática y soporte antioxidante</span></li>
+                        <li><strong>V-ITADOL</strong> <span data-i18n="restore_prod2">- Alivio natural de dolores articulares</span></li>
+                        <li><strong>GLUTATION PLUS</strong> <span data-i18n="restore_prod3">- Potente antioxidante para defensa celular</span></li>
+                        <li><strong>V-GLUTATION</strong> <span data-i18n="restore_prod4">- Protección contra el estrés oxidativo</span></li>
+                        <li><strong>V-FORTYFLORA</strong> <span data-i18n="restore_prod5">- Reequilibrio intestinal con probióticos</span></li>
+                        <li><strong>V-ASCULAX</strong> <span data-i18n="restore_prod6">- Apoyo a la salud cardiovascular</span></li>
+                        <li><strong>V-OMEGA 3</strong> <span data-i18n="restore_prod7">- Ácidos grasos esenciales para cerebro y corazón</span></li>
+                        <li><strong>V-ITALAY</strong> <span data-i18n="restore_prod8">- Fortalece articulaciones y tejido conectivo</span></li>
+                        <li><strong>V-CURCUMAX</strong> <span data-i18n="restore_prod9">- Antiinflamatorio natural con cúrcuma</span></li>
+                        <li><strong>V-CONTROL</strong> <span data-i18n="restore_prod10">- Equilibrio hormonal y metabólico</span></li>
+                        <li><strong>V-ITALBOOST</strong> <span data-i18n="restore_prod11">- Estímulo integral para energía y recuperación</span></li>
+                    </ul>
+                    <a href="https://vitalhealthglobal.com/collections/all?refID=111834" class="category-btn" data-i18n="view_products">Ver Productos en la Tienda</a>
+                </div>
+            </div>
+            
+            <!-- Category 3: Nutre -->
+            <div class="category-row">
+                <div class="category-image-container">
+                    <img src="images/Categoria Nutre_1761365344846.jpg" alt="Nutre - Productos">
+                </div>
+                <div class="category-info">
+                    <h3 data-i18n="category_nourish">NUTRE</h3>
+                    <p class="category-description" data-i18n="category_nourish_desc">Alimenta tu cuerpo con nutrientes esenciales</p>
+                    <ul class="product-list">
+                        <li><strong>VITALPRO</strong> <span data-i18n="nourish_prod1">- Proteína vegetal para masa muscular</span></li>
+                        <li><strong>V-NGRY</strong> <span data-i18n="nourish_prod2">- Energía sostenida para el día a día</span></li>
+                        <li><strong>V-NITRO</strong> <span data-i18n="nourish_prod3">- Activador físico con óxido nítrico</span></li>
+                        <li><strong>V-DAILY</strong> <span data-i18n="nourish_prod4">- Multivitamínico completo para uso diario</span></li>
+                        <li><strong>VITALAGE COLLAGEN</strong> <span data-i18n="nourish_prod5">- Colágeno hidrolizado para piel y articulaciones</span></li>
+                        <li><strong>SMOOTHIE</strong> <span data-i18n="nourish_prod6">- Aislado de proteína de soya, ideal para batidos</span></li>
+                    </ul>
+                    <a href="https://vitalhealthglobal.com/collections/all?refID=111834" class="category-btn" data-i18n="view_products">Ver Productos en la Tienda</a>
+                </div>
+            </div>
+            
+            <!-- Category 4: Despierta -->
+            <div class="category-row">
+                <div class="category-image-container">
+                    <img src="images/Categoria Despierta_1761365344846.jpg" alt="Despierta - Productos">
+                </div>
+                <div class="category-info">
+                    <h3 data-i18n="category_awaken">DESPIERTA</h3>
+                    <p class="category-description" data-i18n="category_awaken_desc">Energía natural y enfoque mental</p>
+                    <ul class="product-list">
+                        <li><strong>THERMOKAFE</strong> <span data-i18n="awaken_prod1">- Café termogénico para quemar grasa</span></li>
+                        <li><strong>LOVKAFE</strong> <span data-i18n="awaken_prod2">- Café funcional con toque afrodisíaco</span></li>
+                        <li><strong>NEUROKAFE</strong> <span data-i18n="awaken_prod3">- Café con nootrópicos para enfoque mental</span></li>
+                        <li><strong>KETOKAFE</strong> <span data-i18n="awaken_prod4">- Café cetogénico para energía prolongada</span></li>
+                        <li><strong>KETOPLUS BHB</strong> <span data-i18n="awaken_prod5">- Apoyo a la cetosis con sales BHB</span></li>
+                        <li><strong>V-LATTEKAFE</strong> <span data-i18n="awaken_prod6">- Latte funcional con 10 hongos adaptógenos</span></li>
+                    </ul>
+                    <a href="https://vitalhealthglobal.com/collections/all?refID=111834" class="category-btn" data-i18n="view_products">Ver Productos en la Tienda</a>
+                </div>
+            </div>
+            
+            <!-- Category 5: Desarrollo -->
+            <div class="category-row">
+                <div class="category-image-container">
+                    <img src="images/Categoria Desarrollo_1761365755913.jpg" alt="Desarrollo - Productos">
+                </div>
+                <div class="category-info">
+                    <h3 data-i18n="category_develop">DESARROLLO</h3>
+                    <p class="category-description" data-i18n="category_develop_desc">Cuidado integral para el desarrollo infantil</p>
+                    <ul class="product-list">
+                        <li><strong>GENIUS SHAKE</strong> <span data-i18n="develop_prod1">- Batido para rendimiento cognitivo</span></li>
+                        <li><strong>D FENCE</strong> <span data-i18n="develop_prod2">- Refuerzo inmunológico de alta potencia</span></li>
+                        <li><strong>SMARTBIOTICS</strong> <span data-i18n="develop_prod3">- Probióticos inteligentes para salud integral</span></li>
+                    </ul>
+                    <a href="https://vitalhealthglobal.com/collections/all?refID=111834" class="category-btn" data-i18n="view_products">Ver Productos en la Tienda</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quantum Analyzer Section -->
+    <section class="quantum-section">
+        <div class="quantum-content">
+            <div class="quantum-image">
+                <img src="images/Analizador quantico_1761365344846.jpg" alt="Analizador Cuántico Bio Eléctrico">
+            </div>
+            
+            <div class="quantum-text">
+                <h2 data-i18n="quantum_name">Analizador Cuántico Bio Eléctrico</h2>
+                <p data-i18n="quantum_description">
+                    El analizador cuántico identifica hasta 45 funciones vitales del cuerpo humano y 
+                    recomienda nuestros productos para mejorar la salud de nuestros afiliados.
+                </p>
+                <div class="quantum-feature" data-i18n="quantum_feature">
+                    ¡Ahora digital con oxímetro y frecuencia de pulso!
+                </div>
+                <a href="https://wa.link/2gpsvh" class="btn" data-i18n="quantum_button">Ver en la Tienda</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- VitalHealth Characteristics -->
+    <section class="characteristics">
+        <h2 class="section-title" data-i18n="char_title">PRODUCTOS VITALHEALTH</h2>
+        
+        <ul class="char-list">
+            <li>
+                <span data-i18n="char_nano_title">Nanotecnología</span>
+                <small data-i18n="char_nano_desc">Ingrediente activo más pequeño para una máxima absorción</small>
+            </li>
+            <li>
+                <span data-i18n="char_adapt_title">Adaptógenos</span>
+                <small data-i18n="char_adapt_desc">Nutrientes que adaptan su funcionalidad a las necesidades del cuerpo</small>
+            </li>
+            <li>
+                <span data-i18n="char_price_title">Precios Bajos</span>
+                <small data-i18n="char_price_desc">Ingredientes de clase mundial a un precio accesible para todos</small>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Health Advice Section -->
+    <section class="health-advice">
+        <div class="advice-content">
+            <h2 data-i18n="advice_title">¿Por qué consumir nuestros productos?</h2>
+            <p data-i18n="advice_description">
+                Un estudio de la OMS realizado en 1998, demuestra que 8 de cada 10 personas en 
+                países industrializados mueren por enfermedades y no por llegar a edad adulta. 
+                <strong>63% De estas muertes pueden ser prevenidas</strong> con la información correcta, un mejor 
+                estilo de vida y el consumo de nutrientes.
+            </p>
+            <p data-i18n="advice_manual_text" style="margin-top: 1.5rem; font-size: 1.1rem;">
+                En el siguiente enlace podrás descargar un 
+                <span style="color: var(--accent-green); font-weight: 600;">
+                    Manual de apoyo para diferentes condiciones de salud
+                </span>.
+            </p>
+            <a href="pages/health-guide.html" class="btn btn-secondary" data-i18n="advice_button">Guía de Tratamientos</a>
+        </div>
+    </section>
+
+    <!-- Business Opportunity Section -->
+    <section class="business-opportunity" id="oportunidad">
+        <div class="business-content">
+            <h2 class="section-title" data-i18n="business_title">Únete a la Familia ACTIVATE</h2>
+            <p class="text-center mb-3" data-i18n="business_subtitle">
+                No solo puedes comprar nuestros productos, también puedes afiliarte y generar ingresos
+            </p>
+            
+            <h3 class="mb-2" data-i18n="business_benefits_title">Beneficios de trabajar con nosotros:</h3>
+            
+            <ul class="business-benefits">
+                <li data-i18n="business_benefit_1">Productos confiables y funcionales</li>
+                <li data-i18n="business_benefit_2">Apoyar los diferentes objetivos de bienestar</li>
+                <li data-i18n="business_benefit_3">Promover hábitos saludables</li>
+                <li data-i18n="business_benefit_4">Ser parte de los distribuidores</li>
+                <li data-i18n="business_benefit_5">Capacitaciones continuas y material didáctico</li>
+                <li data-i18n="business_benefit_6">Comunidad y propósito</li>
+                <li data-i18n="business_benefit_7">Acceso preferencial</li>
+                <li data-i18n="business_benefit_8">Flexibilidad total</li>
+                <li data-i18n="business_benefit_9">Diferentes maneras de generar dinero</li>
+                <li data-i18n="business_benefit_10">Ser parte de los pioneros de esta industria</li>
+            </ul>
+            
+            <div class="text-center mt-3">
+                <a href="pages/business-opportunity.html" class="btn" data-i18n="business_button">Más Información</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Anairis Section -->
+    <section class="anairis-section">
+        <div class="anairis-content">
+            <h2 data-i18n="anairis_title">Conoce a Nuestra Líder</h2>
+            <h3 data-i18n="anairis_name">Anairis Morales Florez</h3>
+            
+            <div class="anairis-horizontal">
+                <div class="anairis-image">
+                    <img src="images/Anairis_1761396886248.jpg" alt="Anairis Morales Florez">
+                </div>
+                
+                <div class="anairis-text">
+                    <p class="anairis-role"><strong data-i18n="anairis_role">Creadora de la marca ACTIVATE</strong></p>
+                    <p data-i18n="anairis_intro">
+                        Si buscas un liderazgo comprobado y consejos que funcionan, únete a mi equipo ACTIVATE 
+                        y te mostraremos los resultados que transforman. Soy una mujer empoderada con más de 15 
+                        años de experiencia y lecciones aprendidas que te llevarán de la mano a buscar tu proceso 
+                        de transformación. Te mostraré el camino para encontrar la fuerza dentro de ti, y como a 
+                        través del ejemplo y de nuestro plan de compensación, alcanzarás tu visión y la convertirás 
+                        en la autoridad de tu propio negocio y destino.
+                    </p>
+                    <a href="pages/business-opportunity.html" class="btn" data-i18n="business_button">Más Información</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials-content">
+            <h2 class="section-title" data-i18n="testimonials_title">Lo Que Dicen Nuestros Clientes</h2>
+            
+            <div class="testimonials-slider">
+                <div class="testimonials-track">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <img src="images/testimonial-maria.png" alt="María González" class="testimonial-photo">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text" data-i18n="testimonial_1_text">
+                            "El V-FORTYFLORA cambió mi vida. Ya no tengo molestias estomacales y me siento con más energía cada día."
+                        </p>
+                        <div class="testimonial-author">
+                            <strong data-i18n="testimonial_1_name">María González</strong>
+                            <span data-i18n="testimonial_1_location">Miami, FL</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <img src="images/testimonial-carlos.png" alt="Carlos Ramírez" class="testimonial-photo">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text" data-i18n="testimonial_2_text">
+                            "Unirme al equipo ACTIVATE fue la mejor decisión. En 6 meses logré la libertad financiera que buscaba."
+                        </p>
+                        <div class="testimonial-author">
+                            <strong data-i18n="testimonial_2_name">Carlos Ramírez</strong>
+                            <span data-i18n="testimonial_2_location">Houston, TX</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <img src="images/testimonial-ana.png" alt="Ana Patricia Díaz" class="testimonial-photo">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text" data-i18n="testimonial_3_text">
+                            "El NEUROKAFE me ayuda a mantener concentración todo el día. Los resultados con CURCUMAX son increíbles."
+                        </p>
+                        <div class="testimonial-author">
+                            <strong data-i18n="testimonial_3_name">Ana Patricia Díaz</strong>
+                            <span data-i18n="testimonial_3_location">Los Angeles, CA</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-card">
+                        <img src="images/testimonial-luisa.png" alt="Luisa Fernández" class="testimonial-photo">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text" data-i18n="testimonial_4_text">
+                            "GENIUS SHAKE le encanta a mis hijos. Ahora trabajo desde casa y paso más tiempo con mi familia."
+                        </p>
+                        <div class="testimonial-author">
+                            <strong data-i18n="testimonial_4_name">Luisa Fernández</strong>
+                            <span data-i18n="testimonial_4_location">Orlando, FL</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 5 -->
+                    <div class="testimonial-card">
+                        <img src="images/testimonial-roberto.png" alt="Roberto Méndez" class="testimonial-photo">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text" data-i18n="testimonial_5_text">
+                            "VITALPRO y V-NRGY transformaron mi ejercicio. Mejor resistencia y recuperación muscular."
+                        </p>
+                        <div class="testimonial-author">
+                            <strong data-i18n="testimonial_5_name">Roberto Méndez</strong>
+                            <span data-i18n="testimonial_5_location">San Antonio, TX</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 6 -->
+                    <div class="testimonial-card">
+                        <img src="images/testimonial-sandra.png" alt="Sandra Morales" class="testimonial-photo">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text" data-i18n="testimonial_6_text">
+                            "Con V-ITARLY bajé 15 kilos en 4 meses. ¡Productos que funcionan y una comunidad increíble!"
+                        </p>
+                        <div class="testimonial-author">
+                            <strong data-i18n="testimonial_6_name">Sandra Morales</strong>
+                            <span data-i18n="testimonial_6_location">Phoenix, AZ</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Duplicate for seamless loop -->
+                    <div class="testimonial-card">
+                        <img src="images/testimonial-maria.png" alt="María González" class="testimonial-photo">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text" data-i18n="testimonial_1_text">
+                            "El V-FORTYFLORA cambió mi vida. Ya no tengo molestias estomacales y me siento con más energía cada día."
+                        </p>
+                        <div class="testimonial-author">
+                            <strong data-i18n="testimonial_1_name">María González</strong>
+                            <span data-i18n="testimonial_1_location">Miami, FL</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <img src="images/testimonial-carlos.png" alt="Carlos Ramírez" class="testimonial-photo">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text" data-i18n="testimonial_2_text">
+                            "Unirme al equipo ACTIVATE fue la mejor decisión. En 6 meses logré la libertad financiera que buscaba."
+                        </p>
+                        <div class="testimonial-author">
+                            <strong data-i18n="testimonial_2_name">Carlos Ramírez</strong>
+                            <span data-i18n="testimonial_2_location">Houston, TX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="contact-content">
+            <h2 class="section-title" data-i18n="contact_title">Contáctanos</h2>
+            
+            <div class="contact-icons-main">
+                <div class="contact-icon-item">
+                    <div class="contact-icon-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <p class="contact-text" data-i18n="contact_email_text">info@activate.com</p>
+                </div>
+                
+                <div class="contact-icon-item">
+                    <div class="contact-icon-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg>
+                    </div>
+                    <p class="contact-text" data-i18n="contact_whatsapp_text">+1 (669) 273-6455</p>
+                </div>
+            </div>
+            
+            <div class="social-icons-small">
+                <a href="#" class="social-icon-small" title="TikTok">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon-small" title="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon-small" title="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="images/Activate_sin_fondo.png" alt="ACTIVATE Logo">
+                </div>
+                <h3 data-i18n="footer_about">Acerca de ACTIVATE</h3>
+                <p data-i18n="footer_about_text">
+                    ACTIVATE es tu marca de confianza para productos de salud y bienestar de VitalHealth. 
+                    Comprometidos con tu transformación integral.
+                </p>
+            </div>
+            
+            <div class="footer-section">
+                <h3 data-i18n="footer_links">Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#categorias" data-i18n="footer_categories">Categorías</a></li>
+                    <li><a href="pages/business-opportunity.html" data-i18n="footer_business">Oportunidad de Negocio</a></li>
+                    <li><a href="pages/health-guide.html" data-i18n="footer_health_guide">Guía de Salud</a></li>
+                    <li><a href="pages/terms.html" data-i18n="footer_terms">Términos y Condiciones</a></li>
+                    <li><a href="pages/privacy.html" data-i18n="footer_privacy">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3 data-i18n="footer_contact_title">Contacto</h3>
+                <p>Email: info@activate.com</p>
+                <p>WhatsApp: +1 (669) 273-6455</p>
+                <div class="footer-social-icons">
+                    <a href="#" class="footer-social-icon" title="TikTok">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer-social-icon" title="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer-social-icon" title="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p data-i18n="footer_rights" style="text-align: center;">© 2025 ACTIVATE. Todos los derechos reservados.</p>
+            <p class="disclaimer" data-i18n="footer_disclaimer" style="text-align: center;">
+                Los productos no están destinados a diagnosticar o curar ninguna enfermedad, solo ayudar a prevenirlas.
+            </p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a id="whatsapp-btn" href="https://wa.link/au2d0p" target="_blank" class="whatsapp-button" aria-label="Contact us on WhatsApp">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-4.713 1.262 1.262-4.669-0.292-0.508c-1.207-2.100-1.847-4.507-1.847-6.983 0-7.51 6.11-13.62 13.62-13.62s13.62 6.11 13.62 13.62-6.11 13.62-13.62 13.62zM21.305 19.26c-0.346-0.174-2.049-1.007-2.366-1.123-0.316-0.117-0.547-0.174-0.776 0.174s-0.892 1.123-1.094 1.347c-0.201 0.227-0.401 0.254-0.747 0.080s-1.456-0.537-2.774-1.711c-1.026-0.913-1.719-2.038-1.921-2.384s-0.022-0.535 0.152-0.707c0.156-0.156 0.346-0.401 0.518-0.603s0.231-0.346 0.346-0.574c0.116-0.231 0.058-0.432-0.028-0.603s-0.776-1.87-1.063-2.565c-0.28-0.672-0.56-0.58-0.776-0.591-0.2-0.008-0.432-0.010-0.662-0.010s-0.603 0.086-0.92 0.432c-0.316 0.346-1.206 1.179-1.206 2.873s1.235 3.333 1.406 3.561c0.174 0.231 2.375 3.634 5.76 5.099 0.805 0.351 1.433 0.559 1.923 0.718 0.809 0.257 1.544 0.221 2.125 0.134 0.648-0.096 2.049-0.835 2.335-1.642 0.288-0.808 0.288-1.501 0.201-1.642-0.086-0.145-0.316-0.231-0.662-0.405z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/language.js"></script>
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+        
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                const navLinks = document.getElementById('navLinks');
+                navLinks.classList.remove('active');
+            });
+        });
+        
+        // Form submission handler
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert(currentLang === 'es' ? 
+                'Gracias por tu mensaje. Te contactaremos pronto.' : 
+                'Thank you for your message. We will contact you soon.');
+            event.target.reset();
+        }
+        
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oportunidad de Negocio - ACTIVATE</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .business-header {
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--light-green) 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .business-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .benefit-detail {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        
+        .benefit-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 20px var(--shadow);
+            border-left: 5px solid var(--accent-green);
+        }
+        
+        .benefit-card h2 {
+            color: var(--primary-green);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .benefit-number {
+            background: var(--accent-green);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .benefit-card p, .benefit-card ul {
+            color: var(--text-gray);
+            line-height: 1.8;
+        }
+        
+        .benefit-card ul {
+            padding-left: 2rem;
+            margin-top: 1rem;
+        }
+        
+        .leader-section {
+            background: linear-gradient(135deg, #f0f8f4 0%, white 100%);
+            padding: 4rem 2rem;
+        }
+        
+        .leader-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        
+        .leader-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px var(--shadow);
+        }
+        
+        .leader-bio h2 {
+            color: var(--primary-green);
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .leader-bio h3 {
+            color: var(--accent-green);
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .leader-bio p {
+            color: var(--text-gray);
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta-section {
+            background: var(--primary-green);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .leader-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .business-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/Activate_sin_fondo.png" alt="ACTIVATE Logo">
+                </a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html" data-i18n="nav_inicio">Inicio</a></li>
+                <li><a href="../index.html#categorias" data-i18n="nav_categorias">Categorías</a></li>
+                <li><a href="health-guide.html" data-i18n="nav_guia_salud">Guía de Salud</a></li>
+                <li><a href="../index.html#contacto" data-i18n="nav_contacto">Contacto</a></li>
+            </ul>
+            
+            <div class="nav-right">
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="es" onclick="setLanguage('es')">ES</button>
+                    <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+                </div>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    ☰
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="business-header">
+        <h1 data-i18n="business_page_title">¿Por qué ser parte de VitalHealth con el equipo ACTIVATE?</h1>
+        <p style="font-size: 1.2rem; margin-top: 1rem; text-align: center;" data-i18n="business_page_subtitle">Transforma tu vida y genera ingresos con propósito</p>
+    </div>
+
+    <div class="benefit-detail">
+        <div class="benefit-card">
+            <h2>
+                <span class="benefit-number">1</span>
+                <span data-i18n="business_benefit_1_title">Productos Confiables y Funcionales</span>
+            </h2>
+            <p data-i18n="business_benefit_1_text">
+                Tenemos los mejores suplementos con extractos naturales, vitaminas y minerales, supervisados por 
+                nuestro consejo de más de 300 médicos especialistas. Contamos con más de 70,000 historias de éxito 
+                y testimonios que demuestran que nuestros productos tienen notables resultados en su bienestar general.
+            </p>
+        </div>
+
+        <div class="benefit-card">
+            <h2>
+                <span class="benefit-number">2</span>
+                <span data-i18n="business_benefit_2_title">Apoyar los Diferentes Objetivos de Bienestar</span>
+            </h2>
+            <p data-i18n="business_benefit_2_text">Nos preocupamos por apoyar las diferentes necesidades de salud:</p>
+            <ul>
+                <li data-i18n="business_benefit_2_li1">Desintoxicar</li>
+                <li data-i18n="business_benefit_2_li2">Restaurar</li>
+                <li data-i18n="business_benefit_2_li3">Nutrir</li>
+                <li data-i18n="business_benefit_2_li4">Despertar</li>
+                <li data-i18n="business_benefit_2_li5">Y el desarrollo integral y físico de los más consentidos de la casa, los niños</li>
+            </ul>
+        </div>
+
+        <div class="benefit-card">
+            <h2>
+                <span class="benefit-number">3</span>
+                <span data-i18n="business_benefit_3_title">Promover Hábitos Saludables</span>
+            </h2>
+            <p>
+                <p data-i18n="business_benefit_3_text">Recordando siempre que nuestros productos no sustituyen un tratamiento médico, pero que sí son de 
+                gran aporte nutricional para el bienestar general. Te convertirás en un embajador de la salud y el 
+                bienestar en tu comunidad.
+            </p>
+        </div>
+
+        <div class="benefit-card">
+            <h2>
+                <span class="benefit-number">4</span>
+                <span data-i18n="business_benefit_4_title">Representar una Marca Confiable</span>
+            </h2>
+            <p>
+                <p data-i18n="business_benefit_4_text">Si representas la marca como distribuidor de VitalHealth, representas una marca confiable que está 
+                en expansión con presencia internacional de productos de alta calidad, respaldo y nutrición avanzada 
+                y con los permisos oficiales necesarios para su comercialización.
+            </p>
+        </div>
+
+        <div class="benefit-card">
+            <h2>
+                <span class="benefit-number">5</span>
+                <span data-i18n="business_benefit_5_title">Capacitación Continua y Apoyo</span>
+            </h2>
+            <p>
+                <p data-i18n="business_benefit_5_text">Ofrecemos todo el material de apoyo para conocer los beneficios de nuestros productos, ingredientes 
+                y su modo de uso. Además tendremos capacitaciones semanales constantes de nutrición, bienestar y 
+                liderazgo, como eventos, charlas, entrenamientos y viajes.
+            </p>
+        </div>
+
+        <div class="benefit-card">
+            <h2>
+                <span class="benefit-number">6</span>
+                <span data-i18n="business_benefit_6_title">Plan de Compensación en Red</span>
+            </h2>
+            <p>
+                <p data-i18n="business_benefit_6_text">Tendrás acceso a un plan de compensación en Red, que te permitirá generar ingresos adicionales por 
+                recomendar nuevos distribuidores. Forma parte de un grupo de personas que comparten tu misma visión, 
+                y que su enfoque no es sólo en la parte comercial, sino humana y educativa.
+            </p>
+        </div>
+
+        <div class="benefit-card">
+            <h2>
+                <span class="benefit-number">7</span>
+                <span data-i18n="business_benefit_7_title">Acceso Preferencial</span>
+            </h2>
+            <p>
+                <p data-i18n="business_benefit_7_text">Como distribuidor o cliente, tendrás acceso preferencial a productos y descuentos. Prueba nuevos 
+                lanzamientos antes de que el producto salga a la venta pública. Tendrás el material digital y las 
+                herramientas de trabajo de ventas que necesitas.
+            </p>
+        </div>
+
+        <div class="benefit-card">
+            <h2>
+                <span class="benefit-number">8</span>
+                <span data-i18n="business_benefit_8_title">Flexibilidad Total</span>
+            </h2>
+            <p>
+                <p data-i18n="business_benefit_8_text">No tendrás un JEFE, serás dueño de tu tiempo. Tendrás ingresos adicionales y el apoyo continuo de 
+                una comunidad, ya sea que hagas el negocio como un ingreso adicional o como tu proyecto principal. 
+                Trabaja desde donde quieras, cuando quieras.
+            </p>
+        </div>
+
+        <div class="benefit-card">
+            <h2>
+                <span class="benefit-number">9</span>
+                <span data-i18n="business_benefit_9_title">Múltiples Maneras de Generar Dinero</span>
+            </h2>
+            <p>
+                <p data-i18n="business_benefit_9_text">Disfrutarás de las más de 12 maneras de ganar dinero con la compañía que no sólo es vender producto, 
+                sino también hacer el negocio con un enfoque residual, donde tus ganancias perduren en el tiempo. 
+                Construye un ingreso pasivo real.
+            </p>
+        </div>
+
+        <div class="benefit-card">
+            <h2>
+                <span class="benefit-number">10</span>
+                <span data-i18n="business_benefit_10_title">Ser Parte de los Pioneros</span>
+            </h2>
+            <p>
+                <p data-i18n="business_benefit_10_text">Con tres años en el mercado, tendrás la oportunidad de ser pionero de esta industria, y formar parte 
+                de los primeros diamantes de la Red. Aprovecha el momento de crecimiento explosivo de la empresa.
+            </p>
+        </div>
+    </div>
+
+    <div class="leader-section">
+        <div class="leader-content">
+            <div class="leader-image">
+                <img src="../images/Anairis_1761403178153.jpg" alt="Anairis Morales Florez">
+            </div>
+            
+            <div class="leader-bio">
+                <h2 data-i18n="business_leader_name">ANAIRIS MORALES FLOREZ</h2>
+                <h3 data-i18n="business_leader_role">Creadora de la marca ACTIVATE</h3>
+                
+                <p>
+                    <p data-i18n="business_leader_p1">Si buscas un liderazgo probado, consejos que funcionan, aquí estoy. Mi nombre es ANAIRIS MORALES 
+                    Y JUNTO A MI EQUIPO ACTIVATE te mostraremos los resultados que transforman. Soy una mujer empoderada 
+                    con más de 15 años de experiencia, lecciones aprendidas que te llevarán de la mano a buscar tu 
+                    proceso de transformación.
+                </p>
+                
+                <p>
+                    <p data-i18n="business_leader_p2">Te mostraré el camino para encontrar la fuerza dentro de ti, y como a través del ejemplo y de 
+                    nuestro plan de compensación, alcanzarás tu visión y la convertirás en la autoridad de tu propio 
+                    negocio y destino.
+                </p>
+                
+                <p>
+                    <p data-i18n="business_leader_p3">Soy madre de tres hijos, esposa, ama de casa, y aún así lidero un equipo que no sólo sueña, sino 
+                    actúa para construir la vida que se merece. Sígueme para recibir la guía, las estrategias y la 
+                    mentalidad de líder que necesitas para activar tu potencial.
+                </p>
+                
+                <p>
+                    <p data-i18n="business_leader_p4">Soy una líder que irradia fuerza y que no sólo trazo el camino, sino que te ayuda a recorrerlo 
+                    con éxito. Si estás listo para transformar tu potencial en resultados medibles, necesitas una guía 
+                    con experiencia y visión, y esa indudablemente soy yo.
+                </p>
+                
+                <p style="font-weight: 600; color: var(--primary-green); font-size: 1.1rem;">
+                    <p style="font-weight: 600; color: var(--primary-green); font-size: 1.1rem;" data-i18n="business_leader_p5">El éxito no es suerte, es estrategia, disciplina y guía correcta. Únete a mi comunidad y activa 
+                    el líder de alto impacto que llevas dentro de ti.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <h2 data-i18n="business_cta_title">¿Listo para Activar tu Potencial?</h2>
+        <p style="font-size: 1.2rem; margin: 1.5rem 0; text-align: center;"><p style="font-size: 1.2rem; margin: 1.5rem 0; text-align: center;" data-i18n="business_cta_subtitle">Contáctanos y comienza tu transformación hoy</p>
+        <a href="../index.html#contacto" class="btn" style="background-color: white; color: var(--primary-green);">
+            Contáctanos Ahora
+        </a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="../images/Activate_sin_fondo.png" alt="ACTIVATE Logo">
+                </div>
+                <h3 data-i18n="footer_about_title">Acerca de ACTIVATE</h3>
+                <p><p data-i18n="footer_about_text">ACTIVATE es tu marca de confianza para productos de salud y bienestar de VitalHealth.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3 data-i18n="footer_quick_links">Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="../index.html"><span data-i18n="nav_inicio">Inicio</span></a></li>
+                    <li><a href="../index.html#categorias"><span data-i18n="nav_categorias">Categorías</span></a></li>
+                    <li><a href="health-guide.html"><span data-i18n="nav_guia_salud">Guía de Salud</span></a></li>
+                    <li><a href="terms.html"><span data-i18n="nav_terminos">Términos y Condiciones</span></a></li>
+                    <li><a href="privacy.html"><span data-i18n="nav_privacidad">Política de Privacidad</span></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p style="text-align: center;"><p data-i18n="footer_copyright" style="text-align: center;">© 2025 ACTIVATE. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a id="whatsapp-btn" href="#" target="_blank" class="whatsapp-button" aria-label="Contact us on WhatsApp">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-4.713 1.262 1.262-4.669-0.292-0.508c-1.207-2.100-1.847-4.507-1.847-6.983 0-7.51 6.11-13.62 13.62-13.62s13.62 6.11 13.62 13.62-6.11 13.62-13.62 13.62zM21.305 19.26c-0.346-0.174-2.049-1.007-2.366-1.123-0.316-0.117-0.547-0.174-0.776 0.174s-0.892 1.123-1.094 1.347c-0.201 0.227-0.401 0.254-0.747 0.080s-1.456-0.537-2.774-1.711c-1.026-0.913-1.719-2.038-1.921-2.384s-0.022-0.535 0.152-0.707c0.156-0.156 0.346-0.401 0.518-0.603s0.231-0.346 0.346-0.574c0.116-0.231 0.058-0.432-0.028-0.603s-0.776-1.87-1.063-2.565c-0.28-0.672-0.56-0.58-0.776-0.591-0.2-0.008-0.432-0.010-0.662-0.010s-0.603 0.086-0.92 0.432c-0.316 0.346-1.206 1.179-1.206 2.873s1.235 3.333 1.406 3.561c0.174 0.231 2.375 3.634 5.76 5.099 0.805 0.351 1.433 0.559 1.923 0.718 0.809 0.257 1.544 0.221 2.125 0.134 0.648-0.096 2.049-0.835 2.335-1.642 0.288-0.808 0.288-1.501 0.201-1.642-0.086-0.145-0.316-0.231-0.662-0.405z"/>
+            </svg>
+        </a>
+    </div>
+
+    <script src="../js/language.js"></script>
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+        
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                const navLinks = document.getElementById('navLinks');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
